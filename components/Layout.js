@@ -463,29 +463,6 @@ const Layout = ({ children }) => {
                     </div>
                 </section>
 
-                <section id="banner-4" className="bg-fixed banner-section division">
-                    <div className="container">
-                        <div className="row">
-
-                            <div className="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
-                                <div className="banner-4-txt text-center white-color">
-
-                                    <h3>Welcome to Spa Magic.</h3>
-                                    <h3>We Manufacture Beauty</h3>
-
-                                    <p className="p-lg">Donec vel sapien augue integer urna turpis cursus porta, mauris augue at luctus dolor
-                                        velna auctor congue pretium ipsum porta justo integer
-                                    </p>
-
-                                    <a href="demo-7.html#" className="btn btn-md btn-color-02 tra-white-hover">Book an Appointment</a>
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-
                 <footer id="footer-4" className="bg-color-01 footer division">
                     <div className="container">
 
