@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Head from 'next/head'
+import Image from 'next/image';
 import React, { useEffect, useState, useRef } from 'react';
 import HeaderCarousel from '../components/HeaderCarousel'
 // import OwlCarousel from 'react-owl-carousel';
@@ -31,15 +32,15 @@ const Layout = ({ children }) => {
                     <div className="header-wrapper" style={{ background: 'rgba(0, 0, 0, .35)' }}>
 
                         <div className="wsmobileheader clearfix">
-                            <span className="smllogo"><img src="images/logo-01.png" width="170" height="50" alt="mobile-logo" /></span>
+                            <span className="smllogo"><Image src="images/logo-01.png" width="170" height="50" alt="mobile-logo" /></span>
                             <a id="wsnavtoggle" className="wsanimated-arrow"><span></span></a>
                         </div>
 
                         <div className="wsmainfull menu clearfix">
                             <div className="wsmainwp clearfix">
 
-                                <div className="desktoplogo"><a href="demo-7.html#hero-7" className="logo-black"><img src="images/logo-01.png" width="170" height="50" alt="header-logo" /></a></div>
-                                <div className="desktoplogo"><a href="demo-7.html#hero-7" className="logo-white"><img src="images/logo-white.png" width="170" height="50" alt="header-logo" /></a></div>
+                                <div className="desktoplogo"><a href="demo-7.html#hero-7" className="logo-black"><Image src="images/logo-01.png" width="170" height="50" alt="header-logo" /></a></div>
+                                <div className="desktoplogo"><a href="demo-7.html#hero-7" className="logo-white"><Image src="images/logo-white.png" width="170" height="50" alt="header-logo" /></a></div>
 
                                 <nav className="wsmenu clearfix">
                                     <ul className="wsmenu-list">
@@ -59,10 +60,10 @@ const Layout = ({ children }) => {
                                         </li>
 
                                         <li className="nl-simple txt-color-03 header-socials clearfix" aria-haspopup="true">
-                                            <span><a href="#" className="ico-facebook"><i className="fab fa-facebook-f"></i></a></span>
-                                            <span><a href="#" className="ico-twitter"><i className="fab fa-twitter"></i></a></span>
-                                            <span><a href="#" className="ico-instagram"><i className="fab fa-instagram"></i></a></span>
-                                            <span><a href="#" className="ico-dribbble"><i className="fab fa-yelp"></i></a></span>
+                                            {/* <span><a href="#" className="ico-facebook"><i className="fab fa-facebook-f"></i></a></span> */}
+                                            {/* <span><a href="#" className="ico-twitter"><i className="fab fa-twitter"></i></a></span> */}
+                                            {/* <span><a href="#" className="ico-instagram"><i className="fab fa-instagram"></i></a></span> */}
+                                            {/* <span><a href="#" className="ico-dribbble"><i className="fab fa-yelp"></i></a></span> */}
                                         </li>
 
                                     </ul>
@@ -82,7 +83,7 @@ const Layout = ({ children }) => {
 
                             <li id="slide-1">
 
-                                <img src="images/slideshow/slide-1.jpg" alt="slide-background" className="img-fluid" />
+                                <Image src="images/slideshow/slide-1.jpg" alt="slide-background" className="img-fluid" />
 
                                 <div className="caption d-flex align-items-center">
                                     <div className="container">
@@ -109,63 +110,63 @@ const Layout = ({ children }) => {
 
                             <div className="owl-carousel brands-carousel">
                                 <div className="brand-logo">
-                                    <img className="img-fluid rounded" src="images/carousel/carousel-1.jpg" alt="brand-logo" />
+                                    <Image className="img-fluid rounded" src="images/carousel/carousel-1.jpg" alt="brand-logo" />
                                 </div>
 
                                 <div className="brand-logo">
-                                    <img className="img-fluid rounded" src="images/carousel/carousel-2.jpg" alt="brand-logo" />
+                                    <Image className="img-fluid rounded" src="images/carousel/carousel-2.jpg" alt="brand-logo" />
                                 </div>
 
                                 <div className="brand-logo">
-                                    <img className="img-fluid rounded" src="images/carousel/carousel-3.jpg" alt="brand-logo" />
+                                    <Image className="img-fluid rounded" src="images/carousel/carousel-3.jpg" alt="brand-logo" />
                                 </div>
 
                                 <div className="brand-logo">
-                                    <img className="img-fluid rounded" src="images/carousel/carousel-4.jpg" alt="brand-logo" />
+                                    <Image className="img-fluid rounded" src="images/carousel/carousel-4.jpg" alt="brand-logo" />
                                 </div>
 
                                 <div className="brand-logo">
-                                    <img className="img-fluid rounded" src="images/carousel/carousel-5.jpg" alt="brand-logo" />
+                                    <Image className="img-fluid rounded" src="images/carousel/carousel-5.jpg" alt="brand-logo" />
                                 </div>
 
                                 <div className="brand-logo">
-                                    <img className="img-fluid rounded" src="images/carousel/carousel-6.jpg" alt="brand-logo" />
+                                    <Image className="img-fluid rounded" src="images/carousel/carousel-6.jpg" alt="brand-logo" />
                                 </div>
 
                                 <div className="brand-logo">
-                                    <img className="img-fluid rounded" src="images/carousel/carousel-7.jpg" alt="brand-logo" />
+                                    <Image className="img-fluid rounded" src="images/carousel/carousel-7.jpg" alt="brand-logo" />
                                 </div>
 
                                 <div className="brand-logo">
-                                    <img className="img-fluid rounded" src="images/carousel/carousel-8.jpg" alt="brand-logo" />
+                                    <Image className="img-fluid rounded" src="images/carousel/carousel-8.jpg" alt="brand-logo" />
                                 </div>
 
                                 <div className="brand-logo">
-                                    <img className="img-fluid rounded" src="images/carousel/carousel-9.jpg" alt="brand-logo" />
+                                    <Image className="img-fluid rounded" src="images/carousel/carousel-9.jpg" alt="brand-logo" />
                                 </div>
 
                                 <div className="brand-logo">
-                                    <img className="img-fluid rounded" src="images/carousel/carousel-10.jpg" alt="brand-logo" />
+                                    <Image className="img-fluid rounded" src="images/carousel/carousel-10.jpg" alt="brand-logo" />
                                 </div>
 
                                 <div className="brand-logo">
-                                    <img className="img-fluid rounded" src="images/carousel/carousel-11.jpg" alt="brand-logo" />
+                                    <Image className="img-fluid rounded" src="images/carousel/carousel-11.jpg" alt="brand-logo" />
                                 </div>
 
                                 <div className="brand-logo">
-                                    <img className="img-fluid rounded" src="images/carousel/carousel-12.jpg" alt="brand-logo" />
+                                    <Image className="img-fluid rounded" src="images/carousel/carousel-12.jpg" alt="brand-logo" />
                                 </div>
 
                                 <div className="brand-logo">
-                                    <img className="img-fluid rounded" src="images/carousel/carousel-13.jpg" alt="brand-logo" />
+                                    <Image className="img-fluid rounded" src="images/carousel/carousel-13.jpg" alt="brand-logo" />
                                 </div>
 
                                 <div className="brand-logo">
-                                    <img className="img-fluid rounded" src="images/carousel/carousel-14.jpg" alt="brand-logo" />
+                                    <Image className="img-fluid rounded" src="images/carousel/carousel-14.jpg" alt="brand-logo" />
                                 </div>
 
                                 <div className="brand-logo">
-                                    <img className="img-fluid rounded" src="images/carousel/carousel-15.jpg" alt="brand-logo" />
+                                    <Image className="img-fluid rounded" src="images/carousel/carousel-15.jpg" alt="brand-logo" />
                                 </div>
                             </div>
 
@@ -184,7 +185,7 @@ const Layout = ({ children }) => {
 
                                     <h4 className="h3-md txt-color-01">CHARM HAIR COMPANY.<br />RUSSIAN HAIR EXTENSIONS SUPPLIERS.</h4>
 
-                                    <p className="txt-color-05">"Charm Hair" is one of the leaders in market for selling REAL <b>raw virgin hair</b>. Our employees make various products from them. We are based in Ukraine, work directly with donors and collect "Slavic hair", which we inspect to ensure the best quality possible. If you need a direct <b>Russian hair extensions supplier</b> of quality goods, without second-hand dealers, then our company is exactly what you were looking for.</p>
+                                    <p className="txt-color-05">Charm Hair is one of the leaders in market for selling REAL <b>raw virgin hair</b>. Our employees make various products from them. We are based in Ukraine, work directly with donors and collect Slavic hair, which we inspect to ensure the best quality possible. If you need a direct <b>Russian hair extensions supplier</b> of quality goods, without second-hand dealers, then our company is exactly what you were looking for.</p>
                                     <p className="txt-color-05">We are professionals and have high qualifications and years of experience, regularly cooperate with leading European companies and master new advanced techniques of working with material. Customers around the world have already appreciated quality of our work. We work with customers from England, France, Italy, Poland, USA and many other countries.</p>
 
                                 </div>
@@ -194,15 +195,15 @@ const Layout = ({ children }) => {
                                 <div className="img-block right-column pc-15 mb-40 position-relative">
 
                                     <div className="bg-color-02 rounded p-3 position-absolute shadow" data="width: 55%;">
-                                        <img className="img-fluid rounded" src="images/section-1_1.jpg" alt="about-image" />
+                                        <Image className="img-fluid rounded" src="images/section-1_1.jpg" alt="about-image" />
                                     </div>
 
                                     <div className="bg-color-02 rounded p-3 position-absolute shadow" data="right: 18%;z-index: 10;bottom: 0;width:65%">
-                                        <img className="img-fluid rounded" src="images/section-1_2.jpg" alt="about-image" />
+                                        <Image className="img-fluid rounded" src="images/section-1_2.jpg" alt="about-image" />
                                     </div>
 
                                     <div className="bg-color-02 rounded p-3 position-absolute shadow" data="top: 15%;right: 0;z-index: 20;width: 60%">
-                                        <img className="img-fluid rounded" src="images/section-1_3.jpg" alt="about-image" />
+                                        <Image className="img-fluid rounded" src="images/section-1_3.jpg" alt="about-image" />
                                     </div>
                                 </div>
                             </div>
@@ -234,11 +235,11 @@ const Layout = ({ children }) => {
                                 <div className="col-md-4">
                                     <div className="sbox-1">
 
-                                        <img className="img-fluid shadow border border-5 w-75" src="images/section-2_1.jpg" data="border-radius: 50%;" alt="service-image" />
+                                        <Image className="img-fluid shadow border border-5 w-75" src="images/section-2_1.jpg" data="border-radius: 50%;" alt="service-image" />
 
                                         <h5 className="h5-md txt-color-01">Aromatherapy</h5>
 
-                                        <p className="txt-color-05">One of the most important pluses is working only with non-mixed strands. Our principle - "one person - one <b>bulk hair</b>". Therefor, we achieve a homogeneous structure of material, our goods are exclusively <b>remy hair extensions</b>. As a result, we get a combed quality cut hair that fully complies with the world standards and is ready to hair extension or manufacture products.</p>
+                                        <p className="txt-color-05">One of the most important pluses is working only with non-mixed strands. Our principle - one person - one <b>bulk hair</b>. Therefor, we achieve a homogeneous structure of material, our goods are exclusively <b>remy hair extensions</b>. As a result, we get a combed quality cut hair that fully complies with the world standards and is ready to hair extension or manufacture products.</p>
 
                                     </div>
                                 </div>
@@ -246,7 +247,7 @@ const Layout = ({ children }) => {
                                 <div className="col-md-4">
                                     <div className="sbox-1">
 
-                                        <img className="img-fluid shadow border border-5 w-75" src="images/section-2_2.jpg" data="border-radius: 50%;" alt="service-image" />
+                                        <Image className="img-fluid shadow border border-5 w-75" src="images/section-2_2.jpg" data="border-radius: 50%;" alt="service-image" />
 
                                         <h5 className="h5-md txt-color-01">Relax</h5>
 
@@ -258,11 +259,11 @@ const Layout = ({ children }) => {
                                 <div className="col-md-4">
                                     <div className="sbox-1">
 
-                                        <img className="img-fluid shadow border border-5 w-75" src="images/section-2_3.jpg" data="border-radius: 50%;" alt="service-image" />
+                                        <Image className="img-fluid shadow border border-5 w-75" src="images/section-2_3.jpg" data="border-radius: 50%;" alt="service-image" />
 
                                         <h5 className="h5-md txt-color-01">Massage</h5>
 
-                                        <p className="txt-color-05">Third, what separates us from other companies? It is material that is collected from donors. It must intact, healthy, with perfect structure. Subsequently, you get a product that does not have damaged scales and looks real on the client's head.</p>
+                                        <p className="txt-color-05">Third, what separates us from other companies? It is material that is collected from donors. It must intact, healthy, with perfect structure. Subsequently, you get a product that does not have damaged scales and looks real on the clients head.</p>
 
                                     </div>
                                 </div>
@@ -318,7 +319,7 @@ const Layout = ({ children }) => {
 
                             <div className="col-md-5 col-lg-6">
                                 <div className="about-6-img">
-                                    <img className="img-fluid w-100" src="images/section-3.jpg" alt="about-image" />
+                                    <Image className="img-fluid w-100" src="images/section-3.jpg" alt="about-image" />
                                 </div>
                             </div>
 
@@ -348,19 +349,19 @@ const Layout = ({ children }) => {
 
                                     <div className="bg-color-06 me-3 p-3 shadow rounded overflow-hidden col-6 col-lg-4">
                                         <div className="overflow-hidden">
-                                            <img height="400" src="images/section-1_1.jpg" alt="about-image" />
+                                            <Image height="400" src="images/section-1_1.jpg" alt="about-image" />
                                         </div>
                                     </div>
 
                                     <div className="bg-color-06 me-3 p-3 shadow rounded overflow-hidden col-6 col-lg-4 position-relative" data="top: 40px">
                                         <div className="overflow-hidden">
-                                            <img height="400" src="images/section-1_1.jpg" alt="about-image" />
+                                            <Image height="400" src="images/section-1_1.jpg" alt="about-image" />
                                         </div>
                                     </div>
 
                                     <div className="bg-color-06 p-3 shadow rounded overflow-hidden d-none d-lg-block col-lg-4 position-relative" data="top: -20px">
                                         <div className="overflow-hidden">
-                                            <img height="400" src="images/section-1_1.jpg" alt="about-image" />
+                                            <Image height="400" src="images/section-1_1.jpg" alt="about-image" />
                                         </div>
                                     </div>
 
@@ -370,7 +371,7 @@ const Layout = ({ children }) => {
                             <div className="col-md-7 col-lg-6 m-bottom">
                                 <div className="txt-block left-column pc-15 mb-40">
 
-                                    <p className="txt-color-05">"Charm Hair" company not only sells first-class materials, but also independently produces products from it. We are confident that you will be able to appreciate our <b>wigs and ponytails, wefts,</b> which are created by machine or handtied, hair on barrettes and ribbons, individual strands for hair extension.</p>
+                                    <p className="txt-color-05">Charm Hair company not only sells first-class materials, but also independently produces products from it. We are confident that you will be able to appreciate our <b>wigs and ponytails, wefts,</b> which are created by machine or handtied, hair on barrettes and ribbons, individual strands for hair extension.</p>
                                     <p className="txt-color-05">The entire production process takes place at our manufacture facilities. For production of goods, we have created our own <b>hair extensions manufacture,</b> which meets the highest quality standards and meets all correct and fair regulations. The best equipment, from miniature sewing needles to professional machines, which allows us to create a truly exclusive product! We are ready to offer clients our amazing bundles and many other interesting products - <b>full lace wigs, lace closure, lace front wigs, topper made with silk , mono top ...</b></p>
 
                                 </div>
@@ -406,7 +407,7 @@ const Layout = ({ children }) => {
                                         <div className="team-member-photo">
                                             <div className="hover-overlay">
 
-                                                <img className="img-fluid rounded" src="images/section-4_1.jpg" alt="team-member-foto" />
+                                                <Image className="img-fluid rounded" src="images/section-4_1.jpg" alt="team-member-foto" />
 
                                             </div>
                                         </div>
@@ -420,7 +421,7 @@ const Layout = ({ children }) => {
                                         <div className="team-member-photo">
                                             <div className="hover-overlay">
 
-                                                <img className="img-fluid rounded" src="images/section-4_2.jpg" alt="team-member-foto" />
+                                                <Image className="img-fluid rounded" src="images/section-4_2.jpg" alt="team-member-foto" />
 
                                             </div>
                                         </div>
@@ -434,7 +435,7 @@ const Layout = ({ children }) => {
                                         <div className="team-member-photo">
                                             <div className="hover-overlay">
 
-                                                <img className="img-fluid rounded" src="images/section-4_3.jpg" alt="team-member-foto" />
+                                                <Image className="img-fluid rounded" src="images/section-4_3.jpg" alt="team-member-foto" />
 
                                             </div>
                                         </div>
@@ -448,7 +449,7 @@ const Layout = ({ children }) => {
                                         <div className="team-member-photo">
                                             <div className="hover-overlay">
 
-                                                <img className="img-fluid rounded" src="images/section-4_4.jpg" alt="team-member-foto" />
+                                                <Image className="img-fluid rounded" src="images/section-4_4.jpg" alt="team-member-foto" />
 
                                             </div>
                                         </div>
@@ -493,7 +494,7 @@ const Layout = ({ children }) => {
                             <div className="col-md-5 col-lg-4">
                                 <div className="footer-info mb-40">
 
-                                    <img src="images/logo-01.png" width="204" height="60" alt="footer-logo" />
+                                    <Image src="images/logo-01.png" width="204" height="60" alt="footer-logo" />
 
                                     <p className="txt-color-05 mt-20">Aliquam nullam tempor sapien at gravida donec congue ipsum a porta magna and
                                         justo velna auctor sapien and augue
@@ -505,7 +506,7 @@ const Layout = ({ children }) => {
                             <div className="col-md-4 col-lg-3 col-xl-3">
                                 <div className="footer-contacts mb-40">
 
-                                    <h6 className="h6-lg txt-color-01">Let's Talk</h6>
+                                    <h6 className="h6-lg txt-color-01">Lets Talk</h6>
 
                                     <p className="txt-color-05">121 King Street, Melbourne,</p>
                                     <p className="txt-color-05">Victoria 3000 Australia</p>
@@ -554,12 +555,12 @@ const Layout = ({ children }) => {
                                     <h6 className="h6-lg txt-color-01">Instagram</h6>
 
                                     <ul className="text-center clearfix">
-                                        <li><a href="demo-7.html#" target="_blank"><img className="insta-img" src="images/instagram/img-01.jpg" alt="insta-img" /></a></li>
-                                        <li><a href="demo-7.html#" target="_blank"><img className="insta-img" src="images/instagram/img-02.jpg" alt="insta-img" /></a></li>
-                                        <li><a href="demo-7.html#" target="_blank"><img className="insta-img" src="images/instagram/img-03.jpg" alt="insta-img" /></a></li>
-                                        <li><a href="demo-7.html#" target="_blank"><img className="insta-img" src="images/instagram/img-04.jpg" alt="insta-img" /></a></li>
-                                        <li><a href="demo-7.html#" target="_blank"><img className="insta-img" src="images/instagram/img-05.jpg" alt="insta-img" /></a></li>
-                                        <li><a href="demo-7.html#" target="_blank"><img className="insta-img" src="images/instagram/img-06.jpg" alt="insta-img" /></a></li>
+                                        <li><a href="demo-7.html#" target="_blank"><Image className="insta-img" src="images/instagram/img-01.jpg" alt="insta-img" /></a></li>
+                                        <li><a href="demo-7.html#" target="_blank"><Image className="insta-img" src="images/instagram/img-02.jpg" alt="insta-img" /></a></li>
+                                        <li><a href="demo-7.html#" target="_blank"><Image className="insta-img" src="images/instagram/img-03.jpg" alt="insta-img" /></a></li>
+                                        <li><a href="demo-7.html#" target="_blank"><Image className="insta-img" src="images/instagram/img-04.jpg" alt="insta-img" /></a></li>
+                                        <li><a href="demo-7.html#" target="_blank"><Image className="insta-img" src="images/instagram/img-05.jpg" alt="insta-img" /></a></li>
+                                        <li><a href="demo-7.html#" target="_blank"><Image className="insta-img" src="images/instagram/img-06.jpg" alt="insta-img" /></a></li>
                                     </ul>
 
                                 </div>
