@@ -18,7 +18,6 @@ const Layout = ({ children }) => {
             <Script src="/js/jquery-3.4.1.min.js" />
             <Script src="/js/bootstrap.min.js" />
             <Script src="/js/modernizr.custom.js" />
-            <Script src='/js/custom.js' defer />
 
             {/* <Script src="/js/jquery.easing.js" /> */}
             {/* <Script src="/js/jquery.appear.js" /> */}
@@ -42,6 +41,7 @@ const Layout = ({ children }) => {
             <Script src="/js/jquery.validate.min.js" />
             <Script src="/js/jquery.ajaxchimp.min.js" /> */}
 
+            <Script src='/js/custom.js' />
 
             <div id="loader-wrapper">
                 <div id="loading">
