@@ -327,7 +327,7 @@
           startT,
           scrolling = false;
 
-        el.addEventListener('touchstart', onTouchStart, false);
+        el.addEventListener('touchstart', onTouchStart, { passive: true });
         function onTouchStart(e) {
           if (slider.animating) {
             e.preventDefault();
