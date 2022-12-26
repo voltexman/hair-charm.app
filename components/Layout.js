@@ -57,38 +57,50 @@ const Layout = ({ children }) => {
                     <div className="header-wrapper" style={{ background: 'rgba(0, 0, 0, .35)' }}>
 
                         <div className="wsmobileheader clearfix">
-                            <span className="smllogo"><Image src="/images/logo-01.png" width="170" height="50" alt="mobile-logo" /></span>
+                            <span className="smllogo">
+                                <Image src="/images/logo-01.png" width="170" height="50" priority alt="mobile-logo" />
+                            </span>
                             <a id="wsnavtoggle" className="wsanimated-arrow"><span></span></a>
                         </div>
 
                         <div className="wsmainfull menu clearfix">
                             <div className="wsmainwp clearfix">
 
-                                <div className="desktoplogo"><a href="demo-7.html#hero-7" className="logo-black"><Image src="/images/logo-01.png" width="170" height="50" alt="header-logo" /></a></div>
-                                <div className="desktoplogo"><a href="demo-7.html#hero-7" className="logo-white"><Image src="/images/logo-white.png" width="170" height="50" alt="header-logo" /></a></div>
+                                <div className="desktoplogo">
+                                    <a href="demo-7.html#hero-7" className="logo-black">
+                                        <Image src="/images/logo-01.png" width="170" height="50" alt="header-logo" />
+                                    </a>
+                                </div>
+                                <div className="desktoplogo">
+                                    <a href="demo-7.html#hero-7" className="logo-white">
+                                        <Image src="/images/logo-white.png" width="170" height="50" alt="header-logo" />
+                                    </a>
+                                </div>
 
                                 <nav className="wsmenu clearfix">
                                     <ul className="wsmenu-list">
 
-                                        <li className="nl-simple" aria-haspopup="true"><a href="contacts.html">Home</a></li>
+                                        <li className="nl-simple" aria-haspopup="true">
+                                            <a href="contacts.html">Home</a>
+                                        </li>
 
-                                        <li className="nl-simple" aria-haspopup="true"><a href="contacts.html">Gallery</a></li>
+                                        <li className="nl-simple" aria-haspopup="true">
+                                            <a href="contacts.html">Gallery</a>
+                                        </li>
 
-                                        <li className="nl-simple" aria-haspopup="true"><a href="contacts.html">Contacts</a></li>
+                                        <li className="nl-simple" aria-haspopup="true">
+                                            <a href="contacts.html">Contacts</a>
+                                        </li>
 
                                         <li className="nl-simple header-phone" aria-haspopup="true">
-                                            <a href="tel:380931501651"><span className="bg-color-09 white-color"><i className="fas fa-phone"></i></span>+380 93 150 16 51</a>
+                                            <a href="tel:380931501651">
+                                                <span className="bg-color-09 white-color">
+                                                    <i className="fas fa-phone"></i></span>+380 93 150 16 51
+                                            </a>
                                         </li>
 
                                         <li className="nl-simple" aria-haspopup="true">
                                             <a href="#" className="btn btn-color-02 tra-color-02-hover last-link">Book Now</a>
-                                        </li>
-
-                                        <li className="nl-simple txt-color-03 header-socials clearfix" aria-haspopup="true">
-                                            {/* <span><a href="#" className="ico-facebook"><i className="fab fa-facebook-f"></i></a></span> */}
-                                            {/* <span><a href="#" className="ico-twitter"><i className="fab fa-twitter"></i></a></span> */}
-                                            {/* <span><a href="#" className="ico-instagram"><i className="fab fa-instagram"></i></a></span> */}
-                                            {/* <span><a href="#" className="ico-dribbble"><i className="fab fa-yelp"></i></a></span> */}
                                         </li>
 
                                     </ul>
