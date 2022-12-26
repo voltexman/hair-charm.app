@@ -8,6 +8,12 @@ import Script from 'next/script';
 
 const Layout = ({ children }) => {
 
+    const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        setLoading(true);
+    }, [])
+
     return (
         <>
             <Head>
@@ -43,17 +49,19 @@ const Layout = ({ children }) => {
 
             <Script src='/js/custom.js' />
 
-            <div id="loader-wrapper">
-                <div id="loading">
-                    <div className="cssload-loader">
-                        <div className="fancy-spinner">
-                            <div className="ring"></div>
-                            <div className="ring"></div>
-                            <div className="dot"></div>
+            {!loading ? (
+                <div id="loader-wrapper">
+                    <div id="loading">
+                        <div className="cssload-loader">
+                            <div className="fancy-spinner">
+                                <div className="ring"></div>
+                                <div className="ring"></div>
+                                <div className="dot"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            ) : null}
 
             <div id="page" className="page">
 

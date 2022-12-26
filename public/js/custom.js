@@ -10,10 +10,10 @@ $(window).on('load', function () {
 	/*	Preloader
 	/*----------------------------------------------------*/
 
-	var preloader = $('#loader-wrapper'),
-		loader = preloader.find('.cssload-loader');
-	loader.fadeOut();
-	preloader.delay(400).fadeOut('slow');
+	// var preloader = $('#loader-wrapper'),
+	// 	loader = preloader.find('.cssload-loader');
+	// loader.fadeOut();
+	// preloader.delay(400).fadeOut('slow');
 
 });
 
