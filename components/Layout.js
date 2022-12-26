@@ -32,15 +32,15 @@ const Layout = ({ children }) => {
                     <div className="header-wrapper" style={{ background: 'rgba(0, 0, 0, .35)' }}>
 
                         <div className="wsmobileheader clearfix">
-                            <span className="smllogo"><Image src="images/logo-01.png" width="170" height="50" alt="mobile-logo" /></span>
+                            <span className="smllogo"><Image src="/images/logo-01.png" width="170" height="50" alt="mobile-logo" /></span>
                             <a id="wsnavtoggle" className="wsanimated-arrow"><span></span></a>
                         </div>
 
                         <div className="wsmainfull menu clearfix">
                             <div className="wsmainwp clearfix">
 
-                                <div className="desktoplogo"><a href="demo-7.html#hero-7" className="logo-black"><Image src="images/logo-01.png" width="170" height="50" alt="header-logo" /></a></div>
-                                <div className="desktoplogo"><a href="demo-7.html#hero-7" className="logo-white"><Image src="images/logo-white.png" width="170" height="50" alt="header-logo" /></a></div>
+                                <div className="desktoplogo"><a href="demo-7.html#hero-7" className="logo-black"><Image src="/images/logo-01.png" width="170" height="50" alt="header-logo" /></a></div>
+                                <div className="desktoplogo"><a href="demo-7.html#hero-7" className="logo-white"><Image src="/images/logo-white.png" width="170" height="50" alt="header-logo" /></a></div>
 
                                 <nav className="wsmenu clearfix">
                                     <ul className="wsmenu-list">
@@ -83,7 +83,7 @@ const Layout = ({ children }) => {
 
                             <li id="slide-1">
 
-                                <Image src="images/slideshow/slide-1.jpg" alt="slide-background" className="img-fluid" />
+                                <Image src="/images/slideshow/slide-1.jpg" width="800" height="600" alt="slide-background" className="img-fluid" />
 
                                 <div className="caption d-flex align-items-center">
                                     <div className="container">
@@ -109,64 +109,65 @@ const Layout = ({ children }) => {
                         <div className="col-md-12 text-center">
 
                             <div className="owl-carousel brands-carousel">
+
                                 <div className="brand-logo">
-                                    <Image className="img-fluid rounded" src="images/carousel/carousel-1.jpg" alt="brand-logo" />
+                                    <Image className="img-fluid rounded" src="/images/carousel/carousel-1.jpg" width="150" height="150" alt="brand-logo" />
                                 </div>
 
                                 <div className="brand-logo">
-                                    <Image className="img-fluid rounded" src="images/carousel/carousel-2.jpg" alt="brand-logo" />
+                                    <Image className="img-fluid rounded" src="/images/carousel/carousel-2.jpg" width="150" height="150" alt="brand-logo" />
                                 </div>
 
                                 <div className="brand-logo">
-                                    <Image className="img-fluid rounded" src="images/carousel/carousel-3.jpg" alt="brand-logo" />
+                                    <Image className="img-fluid rounded" src="/images/carousel/carousel-3.jpg" width="150" height="150" alt="brand-logo" />
                                 </div>
 
                                 <div className="brand-logo">
-                                    <Image className="img-fluid rounded" src="images/carousel/carousel-4.jpg" alt="brand-logo" />
+                                    <Image className="img-fluid rounded" src="/images/carousel/carousel-4.jpg" width="150" height="150" alt="brand-logo" />
                                 </div>
 
                                 <div className="brand-logo">
-                                    <Image className="img-fluid rounded" src="images/carousel/carousel-5.jpg" alt="brand-logo" />
+                                    <Image className="img-fluid rounded" src="/images/carousel/carousel-5.jpg" width="150" height="150" alt="brand-logo" />
                                 </div>
 
                                 <div className="brand-logo">
-                                    <Image className="img-fluid rounded" src="images/carousel/carousel-6.jpg" alt="brand-logo" />
+                                    <Image className="img-fluid rounded" src="/images/carousel/carousel-6.jpg" width="150" height="150" alt="brand-logo" />
                                 </div>
 
                                 <div className="brand-logo">
-                                    <Image className="img-fluid rounded" src="images/carousel/carousel-7.jpg" alt="brand-logo" />
+                                    <Image className="img-fluid rounded" src="/images/carousel/carousel-7.jpg" width="150" height="150" alt="brand-logo" />
                                 </div>
 
                                 <div className="brand-logo">
-                                    <Image className="img-fluid rounded" src="images/carousel/carousel-8.jpg" alt="brand-logo" />
+                                    <Image className="img-fluid rounded" src="/images/carousel/carousel-8.jpg" width="150" height="150" alt="brand-logo" />
                                 </div>
 
                                 <div className="brand-logo">
-                                    <Image className="img-fluid rounded" src="images/carousel/carousel-9.jpg" alt="brand-logo" />
+                                    <Image className="img-fluid rounded" src="/images/carousel/carousel-9.jpg" width="150" height="150" alt="brand-logo" />
                                 </div>
 
                                 <div className="brand-logo">
-                                    <Image className="img-fluid rounded" src="images/carousel/carousel-10.jpg" alt="brand-logo" />
+                                    <Image className="img-fluid rounded" src="/images/carousel/carousel-10.jpg" width="150" height="150" alt="brand-logo" />
                                 </div>
 
                                 <div className="brand-logo">
-                                    <Image className="img-fluid rounded" src="images/carousel/carousel-11.jpg" alt="brand-logo" />
+                                    <Image className="img-fluid rounded" src="/images/carousel/carousel-11.jpg" width="150" height="150" alt="brand-logo" />
                                 </div>
 
                                 <div className="brand-logo">
-                                    <Image className="img-fluid rounded" src="images/carousel/carousel-12.jpg" alt="brand-logo" />
+                                    <Image className="img-fluid rounded" src="/images/carousel/carousel-12.jpg" width="150" height="150" alt="brand-logo" />
                                 </div>
 
                                 <div className="brand-logo">
-                                    <Image className="img-fluid rounded" src="images/carousel/carousel-13.jpg" alt="brand-logo" />
+                                    <Image className="img-fluid rounded" src="/images/carousel/carousel-13.jpg" width="150" height="150" alt="brand-logo" />
                                 </div>
 
                                 <div className="brand-logo">
-                                    <Image className="img-fluid rounded" src="images/carousel/carousel-14.jpg" alt="brand-logo" />
+                                    <Image className="img-fluid rounded" src="/images/carousel/carousel-14.jpg" width="150" height="150" alt="brand-logo" />
                                 </div>
 
                                 <div className="brand-logo">
-                                    <Image className="img-fluid rounded" src="images/carousel/carousel-15.jpg" alt="brand-logo" />
+                                    <Image className="img-fluid rounded" src="/images/carousel/carousel-15.jpg" width="150" height="150" alt="brand-logo" />
                                 </div>
                             </div>
 
@@ -195,15 +196,15 @@ const Layout = ({ children }) => {
                                 <div className="img-block right-column pc-15 mb-40 position-relative">
 
                                     <div className="bg-color-02 rounded p-3 position-absolute shadow" data="width: 55%;">
-                                        <Image className="img-fluid rounded" src="images/section-1_1.jpg" alt="about-image" />
+                                        <Image className="img-fluid rounded" src="/images/section-1_1.jpg" width="500" height="500" alt="about-image" />
                                     </div>
 
                                     <div className="bg-color-02 rounded p-3 position-absolute shadow" data="right: 18%;z-index: 10;bottom: 0;width:65%">
-                                        <Image className="img-fluid rounded" src="images/section-1_2.jpg" alt="about-image" />
+                                        <Image className="img-fluid rounded" src="/images/section-1_2.jpg" width="500" height="500" alt="about-image" />
                                     </div>
 
                                     <div className="bg-color-02 rounded p-3 position-absolute shadow" data="top: 15%;right: 0;z-index: 20;width: 60%">
-                                        <Image className="img-fluid rounded" src="images/section-1_3.jpg" alt="about-image" />
+                                        <Image className="img-fluid rounded" src="/images/section-1_3.jpg" width="500" height="500" alt="about-image" />
                                     </div>
                                 </div>
                             </div>
@@ -235,7 +236,7 @@ const Layout = ({ children }) => {
                                 <div className="col-md-4">
                                     <div className="sbox-1">
 
-                                        <Image className="img-fluid shadow border border-5 w-75" src="images/section-2_1.jpg" data="border-radius: 50%;" alt="service-image" />
+                                        <Image className="img-fluid shadow border border-5 w-75" src="/images/section-2_1.jpg" width="400" height="400" data="border-radius: 50%;" alt="service-image" />
 
                                         <h5 className="h5-md txt-color-01">Aromatherapy</h5>
 
@@ -247,7 +248,7 @@ const Layout = ({ children }) => {
                                 <div className="col-md-4">
                                     <div className="sbox-1">
 
-                                        <Image className="img-fluid shadow border border-5 w-75" src="images/section-2_2.jpg" data="border-radius: 50%;" alt="service-image" />
+                                        <Image className="img-fluid shadow border border-5 w-75" src="/images/section-2_2.jpg" width="400" height="400" data="border-radius: 50%;" alt="service-image" />
 
                                         <h5 className="h5-md txt-color-01">Relax</h5>
 
@@ -259,7 +260,7 @@ const Layout = ({ children }) => {
                                 <div className="col-md-4">
                                     <div className="sbox-1">
 
-                                        <Image className="img-fluid shadow border border-5 w-75" src="images/section-2_3.jpg" data="border-radius: 50%;" alt="service-image" />
+                                        <Image className="img-fluid shadow border border-5 w-75" src="/images/section-2_3.jpg" width="400" height="400" data="border-radius: 50%;" alt="service-image" />
 
                                         <h5 className="h5-md txt-color-01">Massage</h5>
 
@@ -319,7 +320,7 @@ const Layout = ({ children }) => {
 
                             <div className="col-md-5 col-lg-6">
                                 <div className="about-6-img">
-                                    <Image className="img-fluid w-100" src="images/section-3.jpg" alt="about-image" />
+                                    <Image className="img-fluid w-100" src="/images/section-3.jpg" width="400" height="400" alt="about-image" />
                                 </div>
                             </div>
 
@@ -349,19 +350,19 @@ const Layout = ({ children }) => {
 
                                     <div className="bg-color-06 me-3 p-3 shadow rounded overflow-hidden col-6 col-lg-4">
                                         <div className="overflow-hidden">
-                                            <Image height="400" src="images/section-1_1.jpg" alt="about-image" />
+                                            <Image src="/images/section-1_1.jpg" width="400" height="400" alt="about-image" />
                                         </div>
                                     </div>
 
                                     <div className="bg-color-06 me-3 p-3 shadow rounded overflow-hidden col-6 col-lg-4 position-relative" data="top: 40px">
                                         <div className="overflow-hidden">
-                                            <Image height="400" src="images/section-1_1.jpg" alt="about-image" />
+                                            <Image src="/images/section-1_1.jpg" width="400" height="400" alt="about-image" />
                                         </div>
                                     </div>
 
                                     <div className="bg-color-06 p-3 shadow rounded overflow-hidden d-none d-lg-block col-lg-4 position-relative" data="top: -20px">
                                         <div className="overflow-hidden">
-                                            <Image height="400" src="images/section-1_1.jpg" alt="about-image" />
+                                            <Image src="/images/section-1_1.jpg" width="400" height="400" alt="about-image" />
                                         </div>
                                     </div>
 
@@ -407,7 +408,7 @@ const Layout = ({ children }) => {
                                         <div className="team-member-photo">
                                             <div className="hover-overlay">
 
-                                                <Image className="img-fluid rounded" src="images/section-4_1.jpg" alt="team-member-foto" />
+                                                <Image className="img-fluid rounded" src="/images/section-4_1.jpg" width="400" height="400" alt="team-member-foto" />
 
                                             </div>
                                         </div>
@@ -421,7 +422,7 @@ const Layout = ({ children }) => {
                                         <div className="team-member-photo">
                                             <div className="hover-overlay">
 
-                                                <Image className="img-fluid rounded" src="images/section-4_2.jpg" alt="team-member-foto" />
+                                                <Image className="img-fluid rounded" src="/images/section-4_2.jpg" width="400" height="400" alt="team-member-foto" />
 
                                             </div>
                                         </div>
@@ -435,7 +436,7 @@ const Layout = ({ children }) => {
                                         <div className="team-member-photo">
                                             <div className="hover-overlay">
 
-                                                <Image className="img-fluid rounded" src="images/section-4_3.jpg" alt="team-member-foto" />
+                                                <Image className="img-fluid rounded" src="/images/section-4_3.jpg" width="400" height="400" alt="team-member-foto" />
 
                                             </div>
                                         </div>
@@ -449,7 +450,7 @@ const Layout = ({ children }) => {
                                         <div className="team-member-photo">
                                             <div className="hover-overlay">
 
-                                                <Image className="img-fluid rounded" src="images/section-4_4.jpg" alt="team-member-foto" />
+                                                <Image className="img-fluid rounded" src="/images/section-4_4.jpg" width="400" height="400" alt="team-member-foto" />
 
                                             </div>
                                         </div>
@@ -471,7 +472,7 @@ const Layout = ({ children }) => {
                             <div className="col-md-5 col-lg-4">
                                 <div className="footer-info mb-40">
 
-                                    <Image src="images/logo-01.png" width="204" height="60" alt="footer-logo" />
+                                    <Image src="/images/logo-01.png" width="204" height="60" alt="footer-logo" />
 
                                     <p className="txt-color-05 mt-20">Aliquam nullam tempor sapien at gravida donec congue ipsum a porta magna and
                                         justo velna auctor sapien and augue
@@ -532,12 +533,12 @@ const Layout = ({ children }) => {
                                     <h6 className="h6-lg txt-color-01">Instagram</h6>
 
                                     <ul className="text-center clearfix">
-                                        <li><a href="demo-7.html#" target="_blank"><Image className="insta-img" src="images/instagram/img-01.jpg" alt="insta-img" /></a></li>
-                                        <li><a href="demo-7.html#" target="_blank"><Image className="insta-img" src="images/instagram/img-02.jpg" alt="insta-img" /></a></li>
-                                        <li><a href="demo-7.html#" target="_blank"><Image className="insta-img" src="images/instagram/img-03.jpg" alt="insta-img" /></a></li>
-                                        <li><a href="demo-7.html#" target="_blank"><Image className="insta-img" src="images/instagram/img-04.jpg" alt="insta-img" /></a></li>
-                                        <li><a href="demo-7.html#" target="_blank"><Image className="insta-img" src="images/instagram/img-05.jpg" alt="insta-img" /></a></li>
-                                        <li><a href="demo-7.html#" target="_blank"><Image className="insta-img" src="images/instagram/img-06.jpg" alt="insta-img" /></a></li>
+                                        <li><a href="demo-7.html#" target="_blank"><Image className="insta-img" src="/images/instagram/img-01.jpg" width="100" height="100" alt="insta-img" /></a></li>
+                                        <li><a href="demo-7.html#" target="_blank"><Image className="insta-img" src="/images/instagram/img-02.jpg" width="100" height="100" alt="insta-img" /></a></li>
+                                        <li><a href="demo-7.html#" target="_blank"><Image className="insta-img" src="/images/instagram/img-03.jpg" width="100" height="100" alt="insta-img" /></a></li>
+                                        <li><a href="demo-7.html#" target="_blank"><Image className="insta-img" src="/images/instagram/img-04.jpg" width="100" height="100" alt="insta-img" /></a></li>
+                                        <li><a href="demo-7.html#" target="_blank"><Image className="insta-img" src="/images/instagram/img-05.jpg" width="100" height="100" alt="insta-img" /></a></li>
+                                        <li><a href="demo-7.html#" target="_blank"><Image className="insta-img" src="/images/instagram/img-06.jpg" width="100" height="100" alt="insta-img" /></a></li>
                                     </ul>
 
                                 </div>
