@@ -14,6 +14,31 @@ const Layout = ({ children }) => {
                 <title>sdsfdh</title>
             </Head>
 
+            <Script src="/js/jquery-3.4.1.min.js" defer />
+            <Script src="/js/bootstrap.min.js" defer />
+            <Script src="/js/modernizr.custom.js" defer />
+            {/* <script src="/js/jquery.easing.js"></script> */}
+            {/* <script src="/js/jquery.appear.js"></script> */}
+            <Script src="/js/jquery.scrollto.js" />
+            <Script src="/js/menu.js" />
+            <Script src="/js/materialize.js" />
+            <Script src="/js/tweenmax.min.js" />
+            <Script src="/js/slideshow.js" defer />
+            <Script src="/js/imagesloaded.pkgd.min.js" />
+            <Script src="/js/isotope.pkgd.min.js" />
+            <Script src="/js/jquery.flexslider.js" />
+            <Script src="/js/owl.carousel.min.js" />
+            <Script src="/js/jquery.magnific-popup.min.js" />
+            {/* <script src="/js/hero-form.js"></script> */}
+            {/* <script src="/js/contact-form.js"></script> */}
+            {/* <script src="/js/comment-form.js"></script> */}
+            {/* <script src="/js/booking-form.js"></script> */}
+            {/* <script src="/js/jquery.datetimepicker.full.js"></script>
+      <script src="/js/jquery.validate.min.js"></script>
+      <script src="/js/jquery.ajaxchimp.min.js"></script> */}
+
+            <Script src='/js/custom.js' defer />
+
             <div id="loader-wrapper">
                 <div id="loading">
                     <div className="cssload-loader">
@@ -75,7 +100,7 @@ const Layout = ({ children }) => {
                     </div>
                 </header>
 
-                <section id="hero-7" className="hero-section division overflow-hidden" data="height: 100vh;">
+                <section id="hero-7" className="hero-section division overflow-hidden" style={{ height: '100vh' }}>
 
                     <div className="slider h-100">
 
@@ -195,15 +220,15 @@ const Layout = ({ children }) => {
                             <div className="col-md-5 col-lg-6 m-bottom overflow-hidden">
                                 <div className="img-block right-column pc-15 mb-40 position-relative">
 
-                                    <div className="bg-color-02 rounded p-3 position-absolute shadow" data="width: 55%;">
+                                    <div className="bg-color-02 rounded p-3 position-absolute shadow" style={{ width: '55%' }}>
                                         <Image className="img-fluid rounded" src="/images/section-1_1.jpg" width="500" height="500" alt="about-image" />
                                     </div>
 
-                                    <div className="bg-color-02 rounded p-3 position-absolute shadow" data="right: 18%;z-index: 10;bottom: 0;width:65%">
+                                    <div className="bg-color-02 rounded p-3 position-absolute shadow" style={{ right: '18%', zIndex: '10', bottom: '0', width: '65%' }}>
                                         <Image className="img-fluid rounded" src="/images/section-1_2.jpg" width="500" height="500" alt="about-image" />
                                     </div>
 
-                                    <div className="bg-color-02 rounded p-3 position-absolute shadow" data="top: 15%;right: 0;z-index: 20;width: 60%">
+                                    <div className="bg-color-02 rounded p-3 position-absolute shadow" style={{ top: '15%', right: '0', zIndex: '20', width: '60%' }}>
                                         <Image className="img-fluid rounded" src="/images/section-1_3.jpg" width="500" height="500" alt="about-image" />
                                     </div>
                                 </div>
@@ -236,7 +261,7 @@ const Layout = ({ children }) => {
                                 <div className="col-md-4">
                                     <div className="sbox-1">
 
-                                        <Image className="img-fluid shadow border border-5 w-75" src="/images/section-2_1.jpg" width="400" height="400" data="border-radius: 50%;" alt="service-image" />
+                                        <Image className="img-fluid shadow border border-5 w-75" src="/images/section-2_1.jpg" width="400" height="400" style={{ borderRadius: '50%' }} alt="service-image" />
 
                                         <h5 className="h5-md txt-color-01">Aromatherapy</h5>
 
@@ -248,7 +273,7 @@ const Layout = ({ children }) => {
                                 <div className="col-md-4">
                                     <div className="sbox-1">
 
-                                        <Image className="img-fluid shadow border border-5 w-75" src="/images/section-2_2.jpg" width="400" height="400" data="border-radius: 50%;" alt="service-image" />
+                                        <Image className="img-fluid shadow border border-5 w-75" src="/images/section-2_2.jpg" width="400" height="400" style={{ borderRadius: '50%' }} alt="service-image" />
 
                                         <h5 className="h5-md txt-color-01">Relax</h5>
 
@@ -260,7 +285,7 @@ const Layout = ({ children }) => {
                                 <div className="col-md-4">
                                     <div className="sbox-1">
 
-                                        <Image className="img-fluid shadow border border-5 w-75" src="/images/section-2_3.jpg" width="400" height="400" data="border-radius: 50%;" alt="service-image" />
+                                        <Image className="img-fluid shadow border border-5 w-75" src="/images/section-2_3.jpg" width="400" height="400" style={{ borderRadius: '50%' }} alt="service-image" />
 
                                         <h5 className="h5-md txt-color-01">Massage</h5>
 
@@ -354,13 +379,13 @@ const Layout = ({ children }) => {
                                         </div>
                                     </div>
 
-                                    <div className="bg-color-06 me-3 p-3 shadow rounded overflow-hidden col-6 col-lg-4 position-relative" data="top: 40px">
+                                    <div className="bg-color-06 me-3 p-3 shadow rounded overflow-hidden col-6 col-lg-4 position-relative" style={{ top: '40px' }}>
                                         <div className="overflow-hidden">
                                             <Image src="/images/section-1_1.jpg" width="400" height="400" alt="about-image" />
                                         </div>
                                     </div>
 
-                                    <div className="bg-color-06 p-3 shadow rounded overflow-hidden d-none d-lg-block col-lg-4 position-relative" data="top: -20px">
+                                    <div className="bg-color-06 p-3 shadow rounded overflow-hidden d-none d-lg-block col-lg-4 position-relative" style={{ top: '-20px' }}>
                                         <div className="overflow-hidden">
                                             <Image src="/images/section-1_1.jpg" width="400" height="400" alt="about-image" />
                                         </div>

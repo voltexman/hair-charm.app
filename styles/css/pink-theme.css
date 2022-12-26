@@ -1003,7 +1003,7 @@ body {
 }
 
 .bg-03 {
-  background-image: url(https://jthemes.net/themes/html/spamagic/files/images/bg-03.jpg);
+  /* background-image: url(https://jthemes.net/themes/html/spamagic/files/images/bg-03.jpg); */
 }
 
 /*------------------------------------------*/
@@ -3898,8 +3898,8 @@ ol.digit-list p {
 .sbox-9-img-meta,
 .sbox-11-img-meta {
   width: 100%;
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, .7), rgba(0, 0, 0, .01));
-  background-image: linear-gradient(bottom, rgba(0, 0, 0, .7), rgba(0, 0, 0, .01));
+  background-image: -webkit-linear-gradient('to bottom', rgba(0, 0, 0, .7), rgba(0, 0, 0, .01));
+  background-image: linear-gradient('to bottom', rgba(0, 0, 0, .7), rgba(0, 0, 0, .01));
   padding: 80px 30px 30px;
   position: absolute;
   left: 0;
