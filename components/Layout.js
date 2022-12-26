@@ -275,7 +275,7 @@ const Layout = ({ children }) => {
                     </div>
                 </section>
 
-                <section id="about-6" className="bg-01 about-section division">
+                <section id="about-6" className="bg-color-05 about-section division">
                     <div className="container">
                         <div className="row d-flex align-items-center">
 
