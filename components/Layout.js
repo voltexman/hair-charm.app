@@ -11,33 +11,37 @@ const Layout = ({ children }) => {
     return (
         <>
             <Head>
-                <title>sdsfdh</title>
+                <title>Russian hair extensions – Slavic hair supplier</title>
+                <meta name="description" content="Slavic hair is the most popular type of hair in the world, and millions of customers  dream of Russian hair extensions. If you need a direct supplier of quality goods, without second-hand dealers, then our company is exactly what you were looking for." />
             </Head>
 
-            <Script src="/js/jquery-3.4.1.min.js" defer />
-            <Script src="/js/bootstrap.min.js" defer />
-            <Script src="/js/modernizr.custom.js" defer />
-            {/* <script src="/js/jquery.easing.js"></script> */}
-            {/* <script src="/js/jquery.appear.js"></script> */}
+            <Script src="/js/jquery-3.4.1.min.js" />
+            <Script src="/js/bootstrap.min.js" />
+            <Script src="/js/modernizr.custom.js" />
+            <Script src='/js/custom.js' defer />
+
+            {/* <Script src="/js/jquery.easing.js" /> */}
+            {/* <Script src="/js/jquery.appear.js" /> */}
+
             <Script src="/js/jquery.scrollto.js" />
             <Script src="/js/menu.js" />
             <Script src="/js/materialize.js" />
             <Script src="/js/tweenmax.min.js" />
-            <Script src="/js/slideshow.js" defer />
+            <Script src="/js/slideshow.js" />
             <Script src="/js/imagesloaded.pkgd.min.js" />
             <Script src="/js/isotope.pkgd.min.js" />
             <Script src="/js/jquery.flexslider.js" />
             <Script src="/js/owl.carousel.min.js" />
             <Script src="/js/jquery.magnific-popup.min.js" />
-            {/* <script src="/js/hero-form.js"></script> */}
-            {/* <script src="/js/contact-form.js"></script> */}
-            {/* <script src="/js/comment-form.js"></script> */}
-            {/* <script src="/js/booking-form.js"></script> */}
-            {/* <script src="/js/jquery.datetimepicker.full.js"></script>
-      <script src="/js/jquery.validate.min.js"></script>
-      <script src="/js/jquery.ajaxchimp.min.js"></script> */}
 
-            <Script src='/js/custom.js' defer />
+            {/* <Script src="/js/hero-form.js" />
+            <Script src="/js/contact-form.js" />
+            <Script src="/js/comment-form.js" />
+            <Script src="/js/booking-form.js" />
+            <Script src="/js/jquery.datetimepicker.full.js" />
+            <Script src="/js/jquery.validate.min.js" />
+            <Script src="/js/jquery.ajaxchimp.min.js" /> */}
+
 
             <div id="loader-wrapper">
                 <div id="loading">
@@ -120,7 +124,7 @@ const Layout = ({ children }) => {
 
                             <li id="slide-1">
 
-                                <Image src="/images/slideshow/slide-1.jpg" width="800" height="600" alt="slide-background" className="img-fluid" />
+                                <Image src="/images/slideshow/slide-1.jpg" width="800" height="600" loading='eager' priority alt="slide-background" className="img-fluid" />
 
                                 <div className="caption d-flex align-items-center">
                                     <div className="container">
