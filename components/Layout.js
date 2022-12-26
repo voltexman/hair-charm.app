@@ -5,13 +5,22 @@ import React, { useEffect, useState, useRef } from 'react';
 import HeaderCarousel from '../components/HeaderCarousel'
 // import OwlCarousel from 'react-owl-carousel';
 import Script from 'next/script';
+import { isMobile } from 'react-device-detect';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/autoplay';
+import 'swiper/css/effect-fade';
+import styles from '../styles/Home.module.css'
 
 const Layout = ({ children }) => {
 
+    const [sliderTxtColor, setSliderTxtColor] = useState();
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
         setLoading(true);
+        setSliderTxtColor(isMobile ? 'text-white' : 'text-dark');
     }, [])
 
     return (
@@ -32,7 +41,7 @@ const Layout = ({ children }) => {
             <Script src="/js/menu.js" />
             <Script src="/js/materialize.js" />
             <Script src="/js/tweenmax.min.js" />
-            <Script src="/js/slideshow.js" />
+            {/* <Script src="/js/slideshow.js" /> */}
             <Script src="/js/imagesloaded.pkgd.min.js" />
             <Script src="/js/isotope.pkgd.min.js" />
             <Script src="/js/jquery.flexslider.js" />
@@ -65,8 +74,8 @@ const Layout = ({ children }) => {
 
             <div id="page" className="page">
 
-                <header id="header" className="header tra-menu navbar-light">
-                    <div className="header-wrapper" style={{ background: 'rgba(0, 0, 0, .35)' }}>
+                <header id="header" className="header tra-menu d-none navbar-light">
+                    <div className="header-wrapper">
 
                         <div className="wsmobileheader clearfix">
                             <span className="smllogo">
@@ -124,13 +133,81 @@ const Layout = ({ children }) => {
                     </div>
                 </header>
 
-                <section id="hero-7" className="hero-section division overflow-hidden" style={{ height: '100vh' }}>
+                <section id="hero-7" className="hero-section division overflow-" style={{ height: '100vh' }}>
 
                     <div className="slider h-100">
 
-                        <ul className="slides h-100">
+                        {/* <ul className="slides h-100"> */}
 
-                            <li id="slide-1">
+                        <Swiper
+                            modules={[Autoplay]}
+                            spaceBetween={0}
+                            slidesPerView={1}
+                            autoplay={{ delay: 3500 }}
+                            effect='creative'
+                            // cardsEffect={ }
+                            loop
+                            style={{ height: '100%' }}
+                            onSlideChange={() => console.log('slide change')}
+                            onSwiper={(swiper) => console.log(swiper)}
+                        >
+                            <SwiperSlide slideClass="h-100">
+
+                                <Image src="/images/slideshow/slide-1.jpg" fill loading='eager' className={styles.image} priority alt="slide-first" />
+
+                                <div className='position-absolute top-0 h-100 w-100 bg-color-10 opacity-25'></div>
+                                <div className="caption d-flex align-items-center position-absolute w-100 h-100 top-0">
+                                    <div className="container">
+                                        <div className="row">
+                                            <div className="col-md-6">
+                                                <div className={`caption-txt text-uppercase text-center opacity-75 ${sliderTxtColor}`}>
+                                                    <h2 className="fs-3">Luxury elite Slavic virgin hair cut on the territory of Ukraine and Russia. Unique opportunity to buy hair straight from the tin</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </SwiperSlide>
+                            <SwiperSlide slideClass="h-100">
+
+                                <Image src="/images/slideshow/slide-2.jpg" fill loading='eager' className={styles.image} priority alt="slide-first" />
+
+                                <div className='position-absolute top-0 h-100 w-100 bg-color-10 opacity-25'></div>
+                                <div className="caption d-flex align-items-center position-absolute w-100 h-100 top-0">
+                                    <div className="container">
+                                        <div className="row">
+                                            <div className="col-md-6">
+                                                <div className={`caption-txt text-uppercase text-center opacity-75 ${sliderTxtColor}`}>
+                                                    <h2 className="fs-3">Luxury elite Slavic virgin hair cut on the territory of Ukraine and Russia. Unique opportunity to buy hair straight from the tin</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </SwiperSlide>
+                            <SwiperSlide slideClass="h-100">
+
+                                <Image src="/images/slideshow/slide-3.jpg" fill loading='eager' className={styles.image} priority alt="slide-first" />
+
+                                <div className='position-absolute top-0 h-100 w-100 bg-color-10 opacity-25'></div>
+                                <div className="caption d-flex align-items-center position-absolute w-100 h-100 top-0">
+                                    <div className="container">
+                                        <div className="row">
+                                            <div className="col-md-6">
+                                                <div className={`caption-txt text-uppercase text-center opacity-75 ${sliderTxtColor}`}>
+                                                    <h2 className="fs-3">Luxury elite Slavic virgin hair cut on the territory of Ukraine and Russia. Unique opportunity to buy hair straight from the tin</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </SwiperSlide>
+                        </Swiper>
+
+                        {/* <li id="slide-1">
 
                                 <Image src="/images/slideshow/slide-1.jpg" width="800" height="600" loading='eager' priority alt="slide-background" className="img-fluid" />
 
@@ -146,9 +223,9 @@ const Layout = ({ children }) => {
                                     </div>
                                 </div>
 
-                            </li>
+                            </li> */}
 
-                        </ul>
+                        {/* </ul> */}
 
                     </div>
                 </section>
@@ -231,9 +308,9 @@ const Layout = ({ children }) => {
                             <div className="col-md-7 col-lg-6 m-top">
                                 <div className="txt-block left-column pc-15 mb-40">
 
-                                    <h2 className="section-id text-lowercase txt-color-02">SLAVIC HAIR IS THE MOST POPULAR TYPE OF HAIR IN THE WORLD. MILLIONS OF CUSTOMERS IN EUROPE AND THE UNITED STATES DREAM OF RUSSIAN HAIR EXTENSIONS.</h2>
+                                    <h2 className="section-id text-lowercase txt-color-02 text-center text-lg-start">SLAVIC HAIR IS THE MOST POPULAR TYPE OF HAIR IN THE WORLD. MILLIONS OF CUSTOMERS IN EUROPE AND THE UNITED STATES DREAM OF RUSSIAN HAIR EXTENSIONS.</h2>
 
-                                    <h4 className="h3-md txt-color-01">CHARM HAIR COMPANY.<br />RUSSIAN HAIR EXTENSIONS SUPPLIERS.</h4>
+                                    <h4 className="h3-md txt-color-01 text-center text-lg-start">CHARM HAIR COMPANY.<br />RUSSIAN HAIR EXTENSIONS SUPPLIERS.</h4>
 
                                     <p className="txt-color-05">Charm Hair is one of the leaders in market for selling REAL <b>raw virgin hair</b>. Our employees make various products from them. We are based in Ukraine, work directly with donors and collect Slavic hair, which we inspect to ensure the best quality possible. If you need a direct <b>Russian hair extensions supplier</b> of quality goods, without second-hand dealers, then our company is exactly what you were looking for.</p>
                                     <p className="txt-color-05">We are professionals and have high qualifications and years of experience, regularly cooperate with leading European companies and master new advanced techniques of working with material. Customers around the world have already appreciated quality of our work. We work with customers from England, France, Italy, Poland, USA and many other countries.</p>
@@ -624,7 +701,7 @@ const Layout = ({ children }) => {
                         </div>
                     </div>
                 </footer>
-            </div>
+            </div >
         </>
     )
 }

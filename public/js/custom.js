@@ -47,37 +47,37 @@ $(document).ready(function () {
 	/*	Hero Slider
 	/*----------------------------------------------------*/
 
-	$('.slider').slider({
-		full_width: false,
-		interval: 6000,
-		transition: 1000,
-		draggable: false,
-		indicators: true,
-	});
+	// $('.slider').slider({
+	// 	full_width: false,
+	// 	interval: 6000,
+	// 	transition: 1000,
+	// 	draggable: false,
+	// 	indicators: true,
+	// });
 
-	$('.slide-next').click(function () {
-		$('.slider').slider('next');
-	});
+	// $('.slide-next').click(function () {
+	// 	$('.slider').slider('next');
+	// });
 
-	$('.slide-prev').click(function () {
-		$('.slider').slider('prev');
-	});
+	// $('.slide-prev').click(function () {
+	// 	$('.slider').slider('prev');
+	// });
 
 
 	/*----------------------------------------------------*/
 	/*	Hero Text Rotator
 	/*----------------------------------------------------*/
 
-	$('.hero-txt-rotator').flexslider({
-		animation: "fade",
-		controlNav: true,
-		directionNav: false,
-		slideshowSpeed: 6000,
-		animationSpeed: 700,
-		start: function (slider) {
-			$('body').removeClass('loading');
-		}
-	});
+	// $('.hero-txt-rotator').flexslider({
+	// 	animation: "fade",
+	// 	controlNav: true,
+	// 	directionNav: false,
+	// 	slideshowSpeed: 6000,
+	// 	animationSpeed: 700,
+	// 	start: function (slider) {
+	// 		$('body').removeClass('loading');
+	// 	}
+	// });
 
 
 	/*----------------------------------------------------*/
@@ -184,148 +184,9 @@ $(document).ready(function () {
 	/*	Single Image Lightbox
 	/*----------------------------------------------------*/
 
-	$('.image-link').magnificPopup({
-		type: 'image'
-	});
-
-
-	/*----------------------------------------------------*/
-	/*	Video Link #1 Lightbox
-	/*----------------------------------------------------*/
-
-	$('.video-popup1').magnificPopup({
-		type: 'iframe',
-		iframe: {
-			patterns: {
-				youtube: {
-					index: 'youtube.com',
-					src: 'https://www.youtube.com/embed/SZEflIVnhH8'
-				}
-			}
-		}
-	});
-
-
-	/*----------------------------------------------------*/
-	/*	Video Link #2 Lightbox
-	/*----------------------------------------------------*/
-
-	$('.video-popup2').magnificPopup({
-		type: 'iframe',
-		iframe: {
-			patterns: {
-				youtube: {
-					index: 'youtube.com',
-					src: 'https://www.youtube.com/embed/7e90gBu4pas'
-				}
-			}
-		}
-	});
-
-
-	/*----------------------------------------------------*/
-	/*	Video Link #3 Lightbox
-	/*----------------------------------------------------*/
-
-	$('.video-popup3').magnificPopup({
-		type: 'iframe',
-		iframe: {
-			patterns: {
-				youtube: {
-					index: 'youtube.com',
-					src: 'https://www.youtube.com/embed/0gv7OC9L2s8'
-				}
-			}
-		}
-	});
-
-
-	/*----------------------------------------------------*/
-	/*	Statistic Counter
-	/*----------------------------------------------------*/
-
-	$('.count-element').each(function () {
-		$(this).appear(function () {
-			$(this).prop('Counter', 0).animate({
-				Counter: $(this).text()
-			}, {
-				duration: 4000,
-				easing: 'swing',
-				step: function (now) {
-					$(this).text(Math.ceil(now));
-				}
-			});
-		}, { accX: 0, accY: 0 });
-	});
-
-
-	/*----------------------------------------------------*/
-	/*	Gallery Photo Rotator
-	/*----------------------------------------------------*/
-
-	var owl = $('.gallery-photo');
-	owl.owlCarousel({
-		items: 4,
-		loop: true,
-		autoplay: true,
-		navBy: 1,
-		autoplayTimeout: 4500,
-		autoplayHoverPause: false,
-		smartSpeed: 3000,
-		responsive: {
-			0: {
-				items: 1
-			},
-			640: {
-				items: 1
-			},
-			767: {
-				items: 2
-			},
-			768: {
-				items: 2
-			},
-			991: {
-				items: 3
-			},
-			1000: {
-				items: 4
-			}
-		}
-	});
-
-
-	/*----------------------------------------------------*/
-	/*	Testimonials Rotator
-	/*----------------------------------------------------*/
-
-	var owl = $('.reviews-wrapper');
-	owl.owlCarousel({
-		items: 3,
-		loop: true,
-		autoplay: true,
-		navBy: 1,
-		autoplayTimeout: 4500,
-		autoplayHoverPause: true,
-		smartSpeed: 1500,
-		responsive: {
-			0: {
-				items: 1
-			},
-			767: {
-				items: 1
-			},
-			768: {
-				items: 2
-			},
-			991: {
-				items: 3
-			},
-			1000: {
-				items: 3
-			}
-		}
-	});
+	// $('.image-link').magnificPopup({
+	// 	type: 'image'
+	// });
 
 
 	/*----------------------------------------------------*/
