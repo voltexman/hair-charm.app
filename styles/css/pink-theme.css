@@ -6842,8 +6842,29 @@ img.insta-img {
 
 
 /* ==========================================================================
-  28. SCROLL TO TOP
+  28. SCROLL
   =========================================================================== */
+
+#scrollDown {
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  bottom: 80px;
+  left: 50%;
+  z-index: 99;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  background-image: url(../../public/images/back-to-top.png);
+  background-repeat: no-repeat;
+  background-position: 50% 48%;
+  background-color: rgba(95, 88, 66, .7);
+  -webkit-transition: all 250ms linear;
+  -moz-transition: all 250ms linear;
+  transition: all 250ms linear;
+  transform: rotate(3.142rad);
+}
 
 #scrollUp {
   display: none;

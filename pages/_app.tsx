@@ -5,7 +5,7 @@ import '../styles/css/flaticon.css';
 import '../styles/css/menu.css';
 import '../styles/css/owl.carousel.min.css';
 import '../styles/css/owl.theme.default.min.css';
-import '../styles/css/flexslider.css';
+// import '../styles/css/flexslider.css';
 import '../styles/css/pink-theme.css';
 import '../styles/css/responsive.css';
 

@@ -1,10 +1,11 @@
-import Link from 'next/link'
+// import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image';
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import HeaderCarousel from '../components/HeaderCarousel'
 // import OwlCarousel from 'react-owl-carousel';
 import Script from 'next/script';
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import { isMobile } from 'react-device-detect';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper';
@@ -14,6 +15,8 @@ import 'swiper/css/effect-fade';
 import styles from '../styles/Home.module.css'
 
 const Layout = ({ children }) => {
+    var Scroll = require('react-scroll');
+    var scroll = Scroll.animateScroll;
 
     const [sliderTxtColor, setSliderTxtColor] = useState();
     const [loading, setLoading] = useState(false);
@@ -21,6 +24,7 @@ const Layout = ({ children }) => {
     useEffect(() => {
         setLoading(true);
         setSliderTxtColor(isMobile ? 'text-white' : 'text-dark');
+        // console.log(scroller)
     }, [])
 
     return (
@@ -32,21 +36,21 @@ const Layout = ({ children }) => {
 
             <Script src="/js/jquery-3.4.1.min.js" />
             <Script src="/js/bootstrap.min.js" />
-            <Script src="/js/modernizr.custom.js" />
+            {/* <Script src="/js/modernizr.custom.js" /> */}
 
             {/* <Script src="/js/jquery.easing.js" /> */}
             {/* <Script src="/js/jquery.appear.js" /> */}
 
-            <Script src="/js/jquery.scrollto.js" />
+            {/* <Script src="/js/jquery.scrollto.js" /> */}
             <Script src="/js/menu.js" />
             <Script src="/js/materialize.js" />
             <Script src="/js/tweenmax.min.js" />
             {/* <Script src="/js/slideshow.js" /> */}
-            <Script src="/js/imagesloaded.pkgd.min.js" />
-            <Script src="/js/isotope.pkgd.min.js" />
-            <Script src="/js/jquery.flexslider.js" />
+            {/* <Script src="/js/imagesloaded.pkgd.min.js" /> */}
+            {/* <Script src="/js/isotope.pkgd.min.js" /> */}
+            {/* <Script src="/js/jquery.flexslider.js" /> */}
             <Script src="/js/owl.carousel.min.js" />
-            <Script src="/js/jquery.magnific-popup.min.js" />
+            {/* <Script src="/js/jquery.magnific-popup.min.js" /> */}
 
             {/* <Script src="/js/hero-form.js" />
             <Script src="/js/contact-form.js" />
@@ -74,7 +78,7 @@ const Layout = ({ children }) => {
 
             <div id="page" className="page">
 
-                <header id="header" className="header tra-menu d-none navbar-light">
+                <header id="header" className="header tra-menu dnone navbar-light">
                     <div className="header-wrapper">
 
                         <div className="wsmobileheader clearfix">
@@ -84,7 +88,7 @@ const Layout = ({ children }) => {
                             <a id="wsnavtoggle" className="wsanimated-arrow"><span></span></a>
                         </div>
 
-                        <div className="wsmainfull menu clearfix">
+                        <div className="wsmainfull menu clearfix float-start">
                             <div className="wsmainwp clearfix">
 
                                 <div className="desktoplogo">
@@ -118,10 +122,6 @@ const Layout = ({ children }) => {
                                                 <span className="bg-color-09 white-color">
                                                     <i className="fas fa-phone"></i></span>+380 93 150 16 51
                                             </a>
-                                        </li>
-
-                                        <li className="nl-simple" aria-haspopup="true">
-                                            <a href="#" className="btn btn-color-02 tra-color-02-hover last-link">Book Now</a>
                                         </li>
 
                                     </ul>
@@ -207,25 +207,23 @@ const Layout = ({ children }) => {
                             </SwiperSlide>
                         </Swiper>
 
-                        {/* <li id="slide-1">
-
-                                <Image src="/images/slideshow/slide-1.jpg" width="800" height="600" loading='eager' priority alt="slide-background" className="img-fluid" />
-
-                                <div className="caption d-flex align-items-center">
-                                    <div className="container">
-                                        <div className="row">
-                                            <div className="col-md-6">
-                                                <div className="caption-txt txt-color-01">
-                                                    <h2 className="fs-3">Luxury elite Slavic virgin hair cut on the territory of Ukraine and Russia. Unique opportunity to buy hair straight from the tin</h2>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </li> */}
-
-                        {/* </ul> */}
+                        <a id="scrollDown" href="#brands-1"></a>
+                        <Link
+                            // activeClass="active"
+                            to="brands-1"
+                            id="scrollDown"
+                            spy={true}
+                            smooth='easeInOutQuart'
+                            hashSpy={true}
+                            offset={-70}
+                            duration={2500}
+                            delay={500}
+                            isDynamic={true}
+                            onSetActive={console.log('on place')}
+                            onSetInactive={console.log('inactive')}
+                            ignoreCancelEvents={false}
+                            spyThrottle={500}
+                        />
 
                     </div>
                 </section>
